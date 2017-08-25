@@ -1,0 +1,53 @@
+<?php
+/**
+ * @see https://github.com/dotkernel/frontend/ for the canonical source repository
+ * @copyright Copyright (c) 2017 Apidemia (https://www.apidemia.com)
+ * @license https://github.com/dotkernel/frontend/blob/master/LICENSE.md MIT License
+ */
+
+declare(strict_types=1);
+
+namespace Frontend\${package}\Form;
+
+use Zend\Form\Form;
+
+/**
+ * Class ${name}
+ * @package Frontend\${package}\Form
+ */
+class ${name} extends Form
+{
+
+    /**
+     * ${name} constructor.
+     * @param string $name
+     * @param array $options
+     */
+    public function __construct($name = '${name}', array $options = [])
+    {
+        parent::__construct($name, $options);
+    }
+
+    public function init()
+    {
+        $this->add([
+            'type' => 'Csrf',
+            'name' => 'csrf',
+            'options' => [
+                'csrf_options' => [
+                    'timeout' => 3600,
+                    'message' => 'The form used to make the request has expired and was refreshed. Please try again.'
+                ]
+            ]
+        ]);
+
+        $this->add([
+            'name' => 'submit',
+            'type' => 'submit',
+            'attributes' => [
+                'type' => 'submit',
+                'value' => 'Submit'
+            ]
+        ], ['priority' => -105]);
+    }
+}

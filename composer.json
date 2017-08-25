@@ -1,0 +1,30 @@
+{
+  "name": "japseyz/dot-toolbox",
+  "type": "library",
+  "description": "DotKernel 3 toolbox for optimised command-line usage",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "JapSeyz",
+      "email": "jesper@apidemia.dk"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "zendframework/zend-servicemanager": "^3.3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8",
+    "squizlabs/php_codesniffer": "^2.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Dot\\Toolbox\\": "src/"
+    },
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "DotTest\\Toolbox\\": "test/"
+    }
+  }
+}
