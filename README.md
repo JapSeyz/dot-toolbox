@@ -6,25 +6,25 @@ Add some basic commands to speed up the daily workflow.
 
 Some new commands as been added to the `php dot` command.
 
-* make:controller <name> <package>
+* make:controller **name** **package**
     * Make a Controller in the specified package
 
-* make:entity <name> <package>
+* make:entity **name** **package**
     * Make a Entity in the specified package
 
-* make:factory <name> <package>
+* make:factory **name** **package**
     * Make a Factory in the specified package
 
-* make:form <name> <package>
+* make:form **name** **package**
     * Make a Form in the specified package
 
-* make:mapper <name> <package> <table>
+* make:mapper **name** **package** **table**
     * Make a Mapper in the specified package
 
-* make:service <name> <package>
+* make:service **name** **package**
     * Make a Service in the specified package
 
-To run any of them simply run php dot <command>.
+To run any of them simply run `php dot <command>`.
 DotKernel will take care of the rest, putting the files in the
 right directory etc.
 
